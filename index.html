@@ -24,13 +24,28 @@ function displayDate(){
 <script>
 	
 	
-	window.onblur = function () {
-			console.log('blur');
-		}
 	
-	document.addEventListener("visibilitychange", function() {
-		console.log('blur'+Date());
-	}, false);
+window.onblur = function () {
+			console.log('window.onblur');
+}
+
+window.onmouseleave = function () {
+			console.log('window.onmouseleave');
+}
+
+document.addEventListener("visibilitychange", function() {
+	console.log('document  visibilitychange');
+}, false);
+
+document.addEventListener('mouseleave', function() { //mouseout, mouseup
+	console.log('doc mouseleave');
+}, false );
+
+window.addEventListener('mouseleave', function() { //mouseout, mouseup
+	console.log('window mouseleave');
+}, false );
+
+
 	
 	
 </script>
