@@ -3,21 +3,39 @@
 <head>
 <meta charset="utf-8">
 <title>菜鸟教程(runoob.com)</title>
+
 <script>
+
 function displayDate(){
 	document.getElementById("demo").innerHTML=Date();
 }
 
-window.onblur = function () {
-        console.log('blur');
-    }
+// window.onblur = function () {
+//         console.log('blur');
+//     }
 
-document.addEventListener("visibilitychange", function() {
-	console.log('blur'+Date());
-}, false);
+// document.addEventListener("visibilitychange", function() {
+// 	console.log('blur'+Date());
+// }, false);
 
 
 </script>
+
+<script>
+	
+	
+	window.onblur = function () {
+			console.log('blur');
+		}
+	
+	document.addEventListener("visibilitychange", function() {
+		console.log('blur'+Date());
+	}, false);
+	
+	
+</script>
+
+
 </head>
 <body>
 
